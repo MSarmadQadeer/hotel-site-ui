@@ -14,8 +14,3 @@ const setNavUlTop = () => {
     }
 };
 setNavUlTop();
-
-window.addEventListener("resize", () => {
-    setShowcaseHeight();
-    setNavUlTop();
-});
