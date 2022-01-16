@@ -202,8 +202,14 @@ nav a:hover,
   background-color: rgba(0, 0, 0, 0.73);
 }
 
+.showcase > div {
+  height: inherit;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
 .showcase .text-content {
-  height: 95vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -219,6 +225,7 @@ nav a:hover,
   font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: 1px;
+  line-height: 60px;
   font-family: var(--header-font);
 }
 
