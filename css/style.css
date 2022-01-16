@@ -49,6 +49,45 @@ body {
   color: var(--primary-color);
 }
 
+/* ====== Preloader ====== */
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.preloader > div:nth-child(1) {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  border-top-color: var(--primary-bg);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.preloader > div:nth-child(2) {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  letter-spacing: 2px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* ====== NAV TOGGLE BUTTON ====== */
 .toggle {
   display: none;
